@@ -22,10 +22,10 @@ int main ()
     scanf ("%i", &m2);
     printf ("Enter 2nd date's year: ");
     scanf ("%i", &y2);
-    sub = (y1 - y2)*360 + (m1 - m2)*60 + (d1 - d2);
-    y = (sub / 360);
-    sub = (sub / 360) - (int)(sub / 360);
-    sub = sub * 360;
+    sub = (y1 - y2)*365 + (m1 - m2)*30 + (d1 - d2);
+    y = (sub / 365);
+    sub = (sub / 365) - (int)(sub / 365);
+    sub = sub * 365;
     m = (sub / 30);
     sub = (sub / 30) - (int)(sub / 30);
     d = sub * 30;
