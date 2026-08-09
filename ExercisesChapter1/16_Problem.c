@@ -6,25 +6,53 @@
 */
 
 #include <stdio.h>
-int main ()
+
+int main()
 {
     int u = 1, f = 2, t, v, s;
-    printf ("  V   D\n");
+
+    // t = 0
     t = 0;
     v = u + f * t;
     s = u * t + 0.5 * f * t * t;
-    printf ("* %i   %i\n", v, s);
+
+    printf("\nVelocity at t = 0: ");
+    printf("*");
+
+    printf("\nDistance at t = 0: ");
+
+    // t = 1
     t = 1;
     v = u + f * t;
     s = u * t + 0.5 * f * t * t;
-    printf ("* %i   %i\n", v, s);
+
+    printf("\nVelocity at t = 1: ");
+    printf("***");
+
+    printf("\nDistance at t = 1: ");
+    printf("**");
+
+    // t = 2
     t = 2;
     v = u + f * t;
     s = u * t + 0.5 * f * t * t;
-    printf ("* %i   %i\n", v, s);
+
+    printf("\nVelocity at t = 2: ");
+    printf("*****");
+
+    printf("\nDistance at t = 2: ");
+    printf("******");
+
+    // t = 3
     t = 3;
     v = u + f * t;
     s = u * t + 0.5 * f * t * t;
-    printf ("* %i   %i\n", v, s);
+
+    printf("\nVelocity at t = 3: ");
+    printf("*******");
+
+    printf("\nDistance at t = 3: ");
+    printf("************");
+
     return 0;
 }
