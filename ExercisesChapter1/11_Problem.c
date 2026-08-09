@@ -1,9 +1,8 @@
 /*
-12. Compute the value of the expression below. For this, use only one arithmetic
-    operator and one assignment operator in each statement. Also, use the least number
-    of variables in the program. Give the final result as the output.
-
-    (5 + 6 × 9/3 − (3 + 8 × (−(1 + 2)))) + 3 × (5 + 6)
+11. If the first term of an arithmetic series is a and the common difference is d, then the
+    second term is b = a + d, the nth term is t = a + (n − 1)d, and the sum of the first
+    n terms is s = 1/2 n{2a + (n − 1)d}. Take a, d, and n of an arithmetic series as input
+    and give the output in the format of a + b + . . . + t = s.
 */
 
 #include <stdio.h>
