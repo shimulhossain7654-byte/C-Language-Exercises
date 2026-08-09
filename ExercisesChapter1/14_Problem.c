@@ -1,3 +1,8 @@
+/*
+14. Look at the program below. Which variables are global variables? Which ones are
+    local variables? What will be the output of which printf statements?
+*/
+
 #include <stdio.h>
 int var = 2; //Global variable
 int main () 
