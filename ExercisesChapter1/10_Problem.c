@@ -1,3 +1,10 @@
+/*
+10. For two linear simultaneous equations ax + by = c and px + qy = r, take a, b, c, p, q,
+    and r as input. Then, solve the two equations and give the values of x and y as output.
+    You can use the two formulas x = (cq − br)/(aq − bp) and y = (cp − ar)/(bp − aq)
+    in your program. Also, assume that aq ≠ bp for the input values.
+*/
+
 #include <stdio.h>
 int main ()
 {
