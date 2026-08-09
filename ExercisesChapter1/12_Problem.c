@@ -1,3 +1,11 @@
+/*
+12. Compute the value of the expression below. For this, use only one arithmetic
+    operator and one assignment operator in each statement. Also, use the least number
+    of variables in the program. Give the final result as the output.
+
+    (5 + 6 × 9/3 − (3 + 8 × (−(1 + 2)))) + 3 × (5 + 6)
+*/
+
 #include <stdio.h>
 int main ()
 {
