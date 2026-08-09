@@ -1,3 +1,8 @@
+/*
+2. Write a program to give output like the design shown below. Write more programs
+   to create such other designs for various letters and symbols.
+*/
+
 #include <stdio.h>
 int main ()
 {
