@@ -1,3 +1,12 @@
+/*
+9. There are many errors in the program below, e.g. compilation errors, header file
+   inclusion errors, data type errors, initialisation errors, accessing before defining error,
+   multiple variables or constants having the same names, and incorrect or missing
+   formulas. First, try to understand what this program is for. Then, fix all compilation
+   errors. Then, check for the reasons behind the incorrect results. List the errors in all
+   cases and also note down how you have fixed them.
+*/
+
 /*Below is the modified version of the incorrect code.*/
 #include <stdio.h>
 int main ()
