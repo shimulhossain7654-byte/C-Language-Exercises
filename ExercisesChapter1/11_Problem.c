@@ -6,18 +6,25 @@
 */
 
 #include <stdio.h>
-#include <math.h>
-int main ()
+
+int main()
 {
-    int a,d,n;
-    float s;
-    printf ("Enter a:");
-    scanf ("%i",&a);
-    printf ("Enter d:");
-    scanf ("%i",&d);
-    printf ("Enter n:");
-    scanf ("%i",&n);
-    s = 0.5 * n * (2 * a + ((n - 1) * d));
-    printf ("a + b + ... + t = %f",s);
+    int a, b, d, n, t, s;
+
+    printf("Enter a: ");
+    scanf("%i", &a);
+
+    printf("Enter d: ");
+    scanf("%i", &d);
+
+    printf("Enter n: ");
+    scanf("%i", &n);
+
+    b = a + d;
+    t = a + (n - 1) * d;
+    s = n * (2 * a + (n - 1) * d) / 2;
+
+    printf("a + b + ... + t = %i\n", s);
+
     return 0;
 }
