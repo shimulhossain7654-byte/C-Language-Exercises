@@ -1,3 +1,10 @@
+/*
+5. Take a temperature as input in Fahrenheit, convert it into Celsius and give output.
+   Then, take another temperature in Celsius, convert and output it in Fahrenheit. Use
+   formulas f = 9 × c/5 + 32 and c = (f − 32)/9, where f and c are the Fahrenheit
+   and Celsius temperatures respectively. Use appropriate data types in your program.
+*/
+
 #include <stdio.h>
 int main () 
 {
