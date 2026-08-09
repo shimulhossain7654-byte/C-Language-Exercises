@@ -25,3 +25,32 @@ int main ()
     printf ("\nc: %i", c);
     return 0;
 }
+
+
+//Without additional variable
+#include <stdio.h>
+
+int main()
+{
+    int a, b, c;
+
+    printf("Enter a: ");
+    scanf("%i", &a);
+
+    printf("Enter b: ");
+    scanf("%i", &b);
+
+    printf("Enter c: ");
+    scanf("%i", &c);
+
+    a = a + b + c;
+    b = a - b - c;
+    c = a - b - c;
+    a = a - b - c;
+
+    printf("a: %i", a);
+    printf("\nb: %i", b);
+    printf("\nc: %i", c);
+
+    return 0;
+}
