@@ -1,3 +1,9 @@
+/*
+6. Take hours, minutes, and seconds as input and convert them into seconds and give
+   output. Also, take the seconds as input, and convert them into hours, minutes, and
+   seconds, and give output. For these, use self referential and compound assignments.
+*/
+
 #include <stdio.h>
 int main ()
 {
