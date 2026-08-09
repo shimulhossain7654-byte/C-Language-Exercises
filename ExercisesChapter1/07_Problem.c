@@ -6,36 +6,61 @@
 */
 
 #include <stdio.h>
-int main () 
-// int const month = 30, year = 12;
+#include <stdlib.h>
+
+int main()
 {
-    int m,y;
-    float d;
-    //First date
-    int m1, y1;
-    float d1, sub;
-    printf ("Enter 1st date's day: ");
-    scanf ("%f", &d1);
-    printf ("Enter 1st date's month: ");
-    scanf ("%i", &m1);
-    printf ("Enter 1st date's year: ");
-    scanf ("%i", &y1);
-    //Second date
-    int m2, y2;
-    float d2;
-    printf ("Enter 2nd date's day: ");
-    scanf ("%f", &d2);
-    printf ("Enter 2nd date's month: ");
-    scanf ("%i", &m2);
-    printf ("Enter 2nd date's year: ");
-    scanf ("%i", &y2);
-    sub = (y1 - y2)*365 + (m1 - m2)*30 + (d1 - d2);
-    y = (sub / 365);
-    sub = (sub / 365) - (int)(sub / 365);
-    sub = sub * 365;
-    m = (sub / 30);
-    sub = (sub / 30) - (int)(sub / 30);
-    d = sub * 30;
-    printf ("Day: %f Month: %i Year: %i", d, m, y);
+    const int DAYS_IN_MONTH = 30;
+    const int MONTHS_IN_YEAR = 12;
+    const int DAYS_IN_YEAR = DAYS_IN_MONTH * MONTHS_IN_YEAR;
+
+    int day1, month1, year1;
+    int day2, month2, year2;
+
+    int totalDays1, totalDays2, difference;
+    int resultYears, resultMonths, resultDays;
+
+    // First date
+    printf("Enter 1st date's day: ");
+    scanf("%d", &day1);
+
+    printf("Enter 1st date's month: ");
+    scanf("%d", &month1);
+
+    printf("Enter 1st date's year: ");
+    scanf("%d", &year1);
+
+    // Second date
+    printf("Enter 2nd date's day: ");
+    scanf("%d", &day2);
+
+    printf("Enter 2nd date's month: ");
+    scanf("%d", &month2);
+
+    printf("Enter 2nd date's year: ");
+    scanf("%d", &year2);
+
+    // Convert both dates into days
+    totalDays1 = year1 * DAYS_IN_YEAR
+               + month1 * DAYS_IN_MONTH
+               + day1;
+
+    totalDays2 = year2 * DAYS_IN_YEAR
+               + month2 * DAYS_IN_MONTH
+               + day2;
+
+    // Find the difference
+    difference = abs(totalDays1 - totalDays2);
+
+    // Convert difference into years, months, and days
+    resultYears = difference / DAYS_IN_YEAR;
+    difference %= DAYS_IN_YEAR;
+
+    resultMonths = difference / DAYS_IN_MONTH;
+    resultDays = difference % DAYS_IN_MONTH;
+
+    printf("Difference: %d years %d months %d days\n",
+           resultYears, resultMonths, resultDays);
+
     return 0;
 }
