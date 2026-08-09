@@ -1,3 +1,10 @@
+/*
+7. Take days, months, and years of two dates as input. Compute their difference and
+   give output. For this, convert the dates into days. Then, subtract to get the difference.
+   Then, convert the difference into years, months, and days. Use constants to denote
+   12 months in a year and 30 days in a month and use them in the conversion formulas.
+*/
+
 #include <stdio.h>
 int main () 
 // int const month = 30, year = 12;
